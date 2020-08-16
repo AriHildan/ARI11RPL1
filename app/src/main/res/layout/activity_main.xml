@@ -71,6 +71,7 @@
         tools:layout_editor_absoluteY="153dp" />
 
     <Button
+        android:onClick="onClick"
         android:layout_margin="20dp"
         android:layout_gravity="center"
         android:id="@+id/button1"

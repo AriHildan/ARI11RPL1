@@ -17,6 +17,7 @@
 
 
 
+
         <ImageView
             android:id="@+id/ivprofile"
             android:background="@mipmap/logo2"
@@ -50,7 +51,10 @@
         </LinearLayout>
 
 
+
     </LinearLayout>
+
+
 </androidx.cardview.widget.CardView>
 
 
