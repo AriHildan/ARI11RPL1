@@ -1,48 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainMenu">
 
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview1"
-        app:cardElevation="30dp"
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:layout_margin="20dp"
-        android:layout_marginBottom="1dp">
+        android:layout_marginBottom="1dp"
+        app:cardElevation="30dp">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
 
             </LinearLayout>
         </LinearLayout>
 
 
-
         <TextView
-            android:background="@color/cardview_dark_background"
             android:id="@+id/tvname"
             style="@android:style/TextAppearance.Medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/cardview_dark_background"
             android:elevation="30dp"
             android:ellipsize="marquee"
             android:focusable="true"
@@ -62,36 +60,36 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview2"
-        app:cardElevation="30dp"
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:layout_margin="20dp"
-        android:layout_marginBottom="1dp">
+        android:layout_marginBottom="1dp"
+        app:cardElevation="30dp">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
 
             </LinearLayout>
         </LinearLayout>
 
         <TextView
-            android:background="@color/cardview_dark_background"
             android:id="@+id/tvname2"
             style="@android:style/TextAppearance.Medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/cardview_dark_background"
             android:elevation="30dp"
             android:ellipsize="marquee"
             android:focusable="true"
@@ -108,8 +106,6 @@
             android:src="@mipmap/logo" />
 
     </androidx.cardview.widget.CardView>
-
-
 
 
 </LinearLayout>

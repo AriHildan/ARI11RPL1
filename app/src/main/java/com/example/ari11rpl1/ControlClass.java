@@ -13,13 +13,13 @@ public class ControlClass extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        sharedPreferences = getSharedPreferences("Login", Context.MODE_PRIVATE);
-        if (sharedPreferences.getString("Username", "").isEmpty() ||
-        sharedPreferences.getString("Username", "").equalsIgnoreCase("")){
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        SharedPreferences sharedPreferences= getSharedPreferences("Login", Context.MODE_PRIVATE);
+        if (sharedPreferences.getString ("status","").isEmpty() ||
+        sharedPreferences.getString("username", "").equalsIgnoreCase("")){
+            startActivity(new Intent(getApplicationContext(),MainActivity.class));
             finish();
         }else{
-            startActivity(new Intent(getApplicationContext(), Main2Activity.class));
+            startActivity(new Intent(getApplicationContext(),MainMenu.class));
             finish();
         }
     }
