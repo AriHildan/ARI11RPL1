@@ -1,59 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<androidx.cardview.widget.CardView android:elevation="10dp"
+<androidx.cardview.widget.CardView
+    android:id="@+id/cv1"
+    android:elevation="10dp"
     app:cardElevation="10dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    android:id="@+id/cardku"
+    android:layout_margin="10dp"
+    android:elevation="10dp"
+    app:cardElevation="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_margin="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-
-
-
         <ImageView
+            android:padding="5dp"
             android:id="@+id/ivprofile"
-            android:background="@mipmap/logo2"
-            android:layout_width="75dp"
-            android:layout_height="75dp"/>
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
         <LinearLayout
+            android:layout_margin="10dp"
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <TextView
-                android:layout_marginLeft="13dp"
+                android:textColor="#1C35C1"
                 android:textStyle="bold"
-                android:layout_marginTop="10dp"
-                android:background="#03A9F4"
-                android:text="Name Placeholder"
+                android:text="name placeholder"
                 android:id="@+id/tvname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <TextView
-                android:layout_marginLeft="13dp"
-                android:textStyle="bold"
-                android:layout_marginTop="13dp"
-                android:background="#03A9F4"
-                android:text="Description"
-                android:id="@+id/tvname2"
+                android:text="desc placeholder"
+                android:id="@+id/tvdesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
+
         </LinearLayout>
 
-
-
     </LinearLayout>
-
 
 </androidx.cardview.widget.CardView>
 
