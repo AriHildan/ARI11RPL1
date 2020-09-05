@@ -34,6 +34,7 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:textColor="#5900F7"
                 android:textStyle="bold"
                 android:text="Name Placeholder"
                 android:id="@+id/tvname"
