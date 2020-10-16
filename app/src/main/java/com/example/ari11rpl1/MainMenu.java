@@ -26,6 +26,13 @@ public class MainMenu extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), ListData.class));
             }
         });
+
         cardview2 = (CardView)findViewById(R.id.cardview2);
+        cardview2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 }

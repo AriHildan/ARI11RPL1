@@ -15,13 +15,14 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.Target;
 
 import java.util.ArrayList;
 
 public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DatakuViewHolder> {
     private ArrayList<Model> dataList;
-    private Callback callback;
+    private static Callback callback;
     View viewku;
     int posku;
 
@@ -51,6 +52,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DatakuViewHold
         Log.d("makananku", "onBindViewHolder: "+dataList.get(position).getPoster_path());
         Glide.with(holder.itemView)
                 .load(dataList.get(position).getPoster_path())
+                .apply(new RequestOptions().override(600,200))
                 .override(Target.SIZE_ORIGINAL)
                 .placeholder(R.mipmap.ic_launcher)
                 .into(holder.ivprofile);
@@ -62,10 +64,13 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.DatakuViewHold
         return (dataList != null) ? dataList.size() : 0;
     }
 
-    public class DatakuViewHolder extends RecyclerView.ViewHolder implements View.OnCreateContextMenuListener{
+    public static class DatakuViewHolder extends RecyclerView.ViewHolder implements View.OnCreateContextMenuListener{
+        private final View viewku;
         private TextView txtNama, txtNpm;
         CardView card;
         ImageView ivprofile;
+        private int posku;
+        private MenuItem.OnMenuItemClickListener onEditMenu;
 
         public DatakuViewHolder(View itemView) {
             super(itemView);
