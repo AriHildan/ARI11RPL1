@@ -1,6 +1,5 @@
 package com.example.ari11rpl1;
 
-
 import android.app.Application;
 
 import io.realm.Realm;
@@ -19,3 +18,4 @@ public class MyApplication extends Application {
         Realm.setDefaultConfiguration(configuration);
     }
 }
+

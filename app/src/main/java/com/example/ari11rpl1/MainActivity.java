@@ -1,50 +1,46 @@
 package com.example.ari11rpl1;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    SharedPreferences preferences;
+    SharedPreferences pref;
     SharedPreferences.Editor editor;
 
-    EditText editText1,editText2;
-    Button button1;
+    EditText txtusername;
+    EditText txtpassword;
+    Button btnlogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        preferences = getSharedPreferences("Login", MODE_PRIVATE);
-        editText1 = (EditText)findViewById(R.id.editText1);
-        editText2 = (EditText) findViewById(R.id.editText2);
-        button1 = (Button) findViewById(R.id.button1);
-        button1.setOnClickListener(new View.OnClickListener() {
+        pref = getSharedPreferences("login", MODE_PRIVATE);
+        txtusername = (EditText)findViewById(R.id.txtusername);
+        txtpassword = (EditText)findViewById(R.id.txtpassword);
+        btnlogin = (Button) findViewById(R.id.btnlogin);
+        btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                if (editText1.getText().toString().equalsIgnoreCase("admin")
-                && editText2.getText().toString().equalsIgnoreCase("admin")){
-                    //saving ke sp
-                    editor = preferences.edit();
-                    editor.putString("username", editText1.getText().toString());
-                    editor.putString("status", "Login");
+            public void onClick(View view) {
+                if (txtusername.getText().toString().equalsIgnoreCase("admin")
+                        && txtpassword.getText().toString().equalsIgnoreCase("admin")){
+                    //saving ke SP
+                    editor = pref.edit();
+                    editor.putString("username", txtusername.getText().toString());
+                    editor.putString("status", "login");
                     editor.apply();
-                    //menuju main menu
+                    //menuju ke main menu
                     startActivity(new Intent(getApplicationContext(), MainMenu.class));
                     finish();
                 }
             }
         });
-
     }
 }
-

@@ -27,7 +27,7 @@ public class ModelMovieRealm extends RealmObject {
         this.judul = judul;
     }
 
-    public String getDesc(String deskripsi) {
+    public String getDesc() {
         return desc;
     }
 
@@ -51,4 +51,3 @@ public class ModelMovieRealm extends RealmObject {
         this.path = path;
     }
 }
-

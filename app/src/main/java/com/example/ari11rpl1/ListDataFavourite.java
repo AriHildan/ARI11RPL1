@@ -1,6 +1,5 @@
 package com.example.ari11rpl1;
 
-
 import android.os.Bundle;
 import android.widget.ImageView;
 

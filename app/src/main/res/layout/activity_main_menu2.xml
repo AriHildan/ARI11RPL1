@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,14 +6,14 @@
     android:orientation="vertical"
     tools:context=".MainMenu">
 
-
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardview1"
+        android:id="@+id/menu1"
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:layout_margin="20dp"
         android:layout_marginBottom="1dp"
-        app:cardElevation="30dp">
+        app:cardElevation="30dp"
+        app:contentPadding="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,48 +22,39 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/articleName"
+                    style="@android:style/TextAppearance.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
+                    android:elevation="3dp"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="Lihat Product"
+                    android:textColor="#000000"
+                    tools:targetApi="lollipop" />
 
-            </LinearLayout>
+            </RelativeLayout>
+
         </LinearLayout>
-
-
-        <TextView
-            android:id="@+id/tvname"
-            style="@android:style/TextAppearance.Medium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/cardview_dark_background"
-            android:elevation="30dp"
-            android:ellipsize="marquee"
-            android:focusable="true"
-            android:marqueeRepeatLimit="marquee_forever"
-            android:padding="10dp"
-            android:singleLine="true"
-            android:text="Market Place 1"
-            android:textColor="#F30000"
-            tools:targetApi="lollipop" />
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@mipmap/logo" />
 
     </androidx.cardview.widget.CardView>
 
+
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardview2"
+        android:id="@+id/menu2"
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:layout_margin="20dp"
         android:layout_marginBottom="1dp"
-        app:cardElevation="30dp">
+        app:cardElevation="30dp"
+        app:contentPadding="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -73,39 +63,26 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                <TextView
+                    style="@android:style/TextAppearance.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="3dp"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="Lihat Product Favouriteku"
+                    android:textColor="#000000"
+                    tools:targetApi="lollipop" />
 
+            </RelativeLayout>
 
-            </LinearLayout>
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/tvname2"
-            style="@android:style/TextAppearance.Medium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/cardview_dark_background"
-            android:elevation="30dp"
-            android:ellipsize="marquee"
-            android:focusable="true"
-            android:marqueeRepeatLimit="marquee_forever"
-            android:padding="10dp"
-            android:singleLine="true"
-            android:text="Market Place 2"
-            android:textColor="#F30000"
-            tools:targetApi="lollipop" />
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@mipmap/logo" />
-
     </androidx.cardview.widget.CardView>
-
 
 </LinearLayout>

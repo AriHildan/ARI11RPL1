@@ -1,6 +1,5 @@
 package com.example.ari11rpl1;
 
-
 import android.util.Log;
 
 import java.util.List;
@@ -40,9 +39,10 @@ public class RealmHelper {
     }
 
     // untuk memanggil semua data
-    public List<ModelMovieRealm> getAllMovie(){
-        RealmResults <ModelMovieRealm> results = realm.where(ModelMovieRealm.class).findAll();
+    public List<com.example.ari11rpl1.ModelMovieRealm> getAllMovie(){
+        RealmResults<ModelMovieRealm> results = realm.where(ModelMovieRealm.class).findAll();
         return results;
     }
 
 }
+

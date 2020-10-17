@@ -1,6 +1,5 @@
 package com.example.ari11rpl1;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,28 +9,25 @@ import androidx.cardview.widget.CardView;
 
 public class MainMenu extends AppCompatActivity {
 
-    CardView cardview1;
-    CardView cardview2;
+    CardView menu1;
+    CardView menu2;
 
-
-    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu2);
-        cardview1 = (CardView)findViewById(R.id.cardview1);
-        cardview1.setOnClickListener(new View.OnClickListener() {
+        menu1 = (CardView)findViewById(R.id.menu1);
+        menu1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), ListData.class));
             }
         });
-
-        cardview2 = (CardView)findViewById(R.id.cardview2);
-        cardview2.setOnClickListener(new View.OnClickListener() {
+        menu2 = (CardView)findViewById(R.id.menu2);
+        menu2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(getApplicationContext(), ListDataFavourite.class));
             }
         });
     }
