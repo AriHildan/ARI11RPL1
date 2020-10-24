@@ -9,6 +9,7 @@
     tools:context=".DetailMovie">
 
     <TextView
+        android:textColor="#1C35C1"
         android:textSize="20sp"
         android:layout_margin="20dp"
         android:layout_gravity="center"
@@ -34,10 +35,11 @@
 
     <Button
         android:id="@+id/btnbookmark"
-        android:layout_marginTop="20dp"
+        android:layout_width="137dp"
+        android:layout_height="31dp"
         android:layout_gravity="center"
-        android:text="Bookmark"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_button"
+        android:text="Bookmark" />
 
 </LinearLayout>
