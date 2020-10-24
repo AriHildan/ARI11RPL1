@@ -22,46 +22,62 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="WELCOME PLEASE LOGIN"
-            android:textSize="17dp"
+            android:textSize="25dp"
             android:textColor="#000000"
             android:gravity="center"
             android:layout_marginTop="40dp"/>
+    <TextView
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="USERNAME"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
         <EditText
+            android:layout_marginTop="1dp"
             android:id="@+id/txtusername"
-            android:layout_width="320dp"
-            android:layout_height="wrap_content"
+            android:background="#5499C7"
             android:layout_gravity="center"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="20dp"
-            android:hint="Username"
-            android:textColorHint="#797979"
-            app:backgroundTint="#797979" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="90dp" />
+
+    <TextView
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="PASSWORD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
         <EditText
+            android:layout_marginTop="1dp"
             android:id="@+id/txtpassword"
-            android:layout_width="320dp"
-            android:layout_height="wrap_content"
+            android:background="#5499C7"
             android:layout_gravity="center"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:textColorHint="#797979"
-            app:backgroundTint="#797979" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="90dp" />
 
         <Button
             android:id="@+id/btnlogin"
-            android:layout_width="320dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
+            android:layout_margin="20dp"
             android:layout_gravity="center"
-            android:background="@color/colorPrimary"
+            android:textColorHint="#000"
+            android:background="#F7DC6F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="LOGIN"
-            android:textColor="#FFFFFF" />
+            tools:layout_editor_absoluteX="150dp"
+            tools:layout_editor_absoluteY="238dp"  />
 
     </LinearLayout>
