@@ -21,63 +21,58 @@
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="WELCOME PLEASE LOGIN"
+            android:text="WELCOME "
             android:textSize="25dp"
             android:textColor="#000000"
             android:gravity="center"
             android:layout_marginTop="40dp"/>
-    <TextView
-        android:textColor="#000000"
-        android:textSize="15dp"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="USERNAME"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 
         <EditText
-            android:layout_marginTop="1dp"
+            android:inputType="text"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/custom_input"
+            android:hint="Username"
+            android:textSize="17dp"
+            android:drawableStart="@drawable/custom_people_icon"
+            android:layout_marginTop="30dp"
             android:id="@+id/txtusername"
-            android:background="#5499C7"
             android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="274dp"
+            android:layout_height="41dp"
             android:ems="10"
-            android:inputType="textPersonName"
             tools:layout_editor_absoluteX="92dp"
-            tools:layout_editor_absoluteY="90dp" />
+            tools:layout_editor_absoluteY="90dp"
+            android:drawableLeft="@drawable/ic_people" />
 
-    <TextView
-        android:textColor="#000000"
-        android:textSize="15dp"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="PASSWORD"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 
-        <EditText
-            android:layout_marginTop="1dp"
-            android:id="@+id/txtpassword"
-            android:background="#5499C7"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            tools:layout_editor_absoluteX="92dp"
-            tools:layout_editor_absoluteY="90dp" />
+    <EditText
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:id="@+id/txtpassword"
+        android:layout_width="274dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:ems="10"
+        android:hint="Password"
+        android:textSize="17dp"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="90dp" />
 
-        <Button
-            android:id="@+id/btnlogin"
-            android:layout_margin="20dp"
-            android:layout_gravity="center"
-            android:textColorHint="#000"
-            android:background="#F7DC6F"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="LOGIN"
-            tools:layout_editor_absoluteX="150dp"
-            tools:layout_editor_absoluteY="238dp"  />
+    <Button
+        android:background="@drawable/custom_button"
+        android:id="@+id/btnlogin"
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="LOGIN"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="238dp" />
 
-    </LinearLayout>
+</LinearLayout>

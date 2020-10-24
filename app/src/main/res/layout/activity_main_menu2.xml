@@ -7,7 +7,7 @@
     tools:context=".MainMenu">
 
     <androidx.cardview.widget.CardView
-        app:cardBackgroundColor="#F7DC6F"
+        app:cardBackgroundColor="#FFF"
         android:id="@+id/menu1"
         android:layout_width="match_parent"
         android:layout_height="180dp"
@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:background="#5E5757"
+                    android:background="@drawable/custom_layout"
                     android:id="@+id/articleName"
                     style="@android:style/TextAppearance.Medium"
                     android:layout_width="match_parent"
@@ -38,7 +38,7 @@
                     android:padding="10dp"
                     android:singleLine="true"
                     android:text="Lihat Product"
-                    android:textColor="#5499C7"
+                    android:textColor="#1C35C1"
                     tools:targetApi="lollipop" />
 
             </RelativeLayout>
@@ -49,7 +49,7 @@
 
 
     <androidx.cardview.widget.CardView
-        app:cardBackgroundColor="#F7DC6F"
+        app:cardBackgroundColor="#FFF"
         android:id="@+id/menu2"
         android:layout_width="match_parent"
         android:layout_height="180dp"
@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:background="#5E5757"
+                    android:background="@drawable/custom_layout"
                     style="@android:style/TextAppearance.Medium"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
                     android:padding="10dp"
                     android:singleLine="true"
                     android:text="Lihat Product Favouriteku"
-                    android:textColor="#5499C7"
+                    android:textColor="#1C35C1"
                     tools:targetApi="lollipop" />
 
             </RelativeLayout>

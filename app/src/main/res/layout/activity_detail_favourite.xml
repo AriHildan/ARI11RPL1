@@ -9,6 +9,7 @@
     tools:context=".DetailMovie">
 
     <TextView
+        android:textColor="#1C35C1"
         android:textSize="20sp"
         android:layout_margin="20dp"
         android:layout_gravity="center"
