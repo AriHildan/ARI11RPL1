@@ -4,89 +4,107 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorPrimary"
+    android:background="@mipmap/background1"
     tools:context=".MainMenu">
 
-    <androidx.cardview.widget.CardView
-        app:cardBackgroundColor="#FFF"
-        android:id="@+id/menu1"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:layout_margin="20dp"
-        android:layout_marginBottom="1dp"
-        app:cardElevation="30dp"
-        app:contentPadding="10dp">
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="658dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:background="#54F44336"
+        android:orientation="vertical"
+        android:outlineSpotShadowColor="@android:color/black">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/menu1"
+            android:layout_width="333dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cardview_style"
+            app:cardElevation="30dp"
+            app:contentPadding="10dp">
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-                <TextView
-                    android:background="@drawable/custom_layout"
-                    android:id="@+id/articleName"
-                    style="@android:style/TextAppearance.Medium"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:elevation="3dp"
-                    android:ellipsize="marquee"
-                    android:focusable="true"
-                    android:marqueeRepeatLimit="marquee_forever"
-                    android:padding="10dp"
-                    android:singleLine="true"
-                    android:text="Lihat Product"
-                    android:textColor="#1C35C1"
-                    tools:targetApi="lollipop" />
+                <LinearLayout
+                    android:layout_width="311.5dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/outline"
+                    android:orientation="horizontal">
 
-            </RelativeLayout>
+                    <ImageView
+                        android:background="@mipmap/home2"
+                        android:id="@+id/movie1"
+                        android:layout_width="44dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="15dp" />
 
-        </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="16dp"
+                        android:text="View Product"
+                        android:textColor="@android:color/black"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
+        </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        app:cardBackgroundColor="#FFF"
-        android:id="@+id/menu2"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:layout_margin="20dp"
-        android:layout_marginBottom="1dp"
-        app:cardElevation="30dp"
-        app:contentPadding="10dp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/menu2"
+            android:layout_width="333dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="#000"
+            app:cardElevation="30dp"
+            app:contentPadding="10dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-                <TextView
-                    android:background="@drawable/custom_layout"
-                    style="@android:style/TextAppearance.Medium"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:elevation="3dp"
-                    android:ellipsize="marquee"
-                    android:focusable="true"
-                    android:marqueeRepeatLimit="marquee_forever"
-                    android:padding="10dp"
-                    android:singleLine="true"
-                    android:text="Lihat Product Favouriteku"
-                    android:textColor="#1C35C1"
-                    tools:targetApi="lollipop" />
+                <LinearLayout
+                    android:layout_width="311.5dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/outline"
+                    android:orientation="horizontal">
 
-            </RelativeLayout>
+                    <ImageView
+                        android:background="@mipmap/fav"
+                        android:layout_width="44dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="16dp" />
 
-        </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Favourite"
+                        android:textColor="@android:color/black"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
 </LinearLayout>

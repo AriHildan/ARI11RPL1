@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     android:orientation="vertical"
-    android:background="@color/colorPrimary"
+    android:background="@mipmap/background1"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,7 +10,7 @@
     tools:context=".DetailMovie">
 
     <TextView
-        android:textColor="#1C35C1"
+        android:textColor="#ffff"
         android:textSize="20sp"
         android:layout_margin="20dp"
         android:layout_gravity="center"
@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:textColor="#ffff"
         android:layout_marginTop="50dp"
         android:layout_gravity="center"
         android:id="@+id/txtdeskripsi"
